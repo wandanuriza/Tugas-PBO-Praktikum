@@ -1,23 +1,25 @@
 package W3;
 
 import java.util.Scanner;
-import java.math.BigInteger;
+import java.math.BigInteger; // library baru
 
 public class Soal6 {
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		String A,B;
-		BigInteger B_A,B_B,kali,jumlah;
+		Scanner input = new Scanner(System.in); 
+		String a,b; 
+		BigInteger Ba,Bb,penjumlahan,perkalian;  
 		
-		A = in.next();
-		B = in.next();
-		B_A = new BigInteger(A);
-		B_B = new BigInteger(B);
-		jumlah = B_A.add(B_B);
-		kali = B_A.multiply(B_B);
-		System.out.println(jumlah);
-		System.out.println(kali);
-		//System.out.println(jumlah+kali);
-		in.close();
+		//BigInteger diperlukan dalam operasi matematika ketika nilai integer 
+		//yang digunakan sangat besar karena jika  hanya menggunakan tipe data int 
+		//bisa menyebabkan integer overflow
+		
+		a = input.next(); // membaca inputan yang disimpan sebagai nilai a
+		b = input.next(); // membaca inputan yang disimpan
+		Ba = new BigInteger(a); // mengubah nilai a ke BigInteger
+		Bb = new BigInteger(b); // mengubah nilai b ke BigInteger
+		penjumlahan = Ba.add(Bb); // operasi penjumlahan dengan tipe data BigInteger
+		perkalian = Ba.multiply(Bb); // operasi perkalian dengan tipe data BigInteger
+		System.out.println(penjumlahan); // cetak hasil penjumlahan
+		System.out.println(perkalian);   // cetak hasil perkalian
 	}
 }

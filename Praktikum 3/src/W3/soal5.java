@@ -1,29 +1,16 @@
 package W3;
+
 import java.util.Scanner;
 
-public class soal5 {
-		public static void bukaTutupJalan(long plat) {
-			if((plat-999999)%5==0) {
-				System.out.println("berhenti");
-			}else {
-				System.out.println("jalan");
-			}
+/*public class Soal5 {
+	Scanner input = new Scanner(System.in);  // input plat nomor
+	plat = input.nextInt();
+	
+	public static void bukaTutupJalan(long plat) {
+		if((plat-999999)%5==0) {  // kondisi yang harus terpenuhi
+			System.out.println("berhenti");  // seleksi jika memenuhi maka berhenti
+		} else {
+			System.out.println("jalan");	 // jika tidak memenuhi maka jalan
 		}
-		
-		public static void main(String[] args) {
-			Scanner in = new Scanner(System.in);
-			String inPlat = null;
-			long allPlat;
-			
-			in.hasNext();
-			for(int i=0;i<4;i++) {
-				if(inPlat==null)
-					inPlat = in.next();
-				else
-					inPlat = inPlat + in.next();
-			}
-			allPlat = Long.parseLong(inPlat);
-			bukaTutupJalan(allPlat);
-			in.close();
-		}
-}
+	}
+} */

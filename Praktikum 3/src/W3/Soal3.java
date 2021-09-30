@@ -1,20 +1,41 @@
 package W3;
-
+import java.util.*;
 public class Soal3 {
-	public static void main(String[] args) {
-        // TODO code application logic here
-        int A=100, B=30;
-        int jumlah = A+B;
-        int kurang = A-B;
-        int kali = A*B;
-        float bagi = (float)A/B;
-        int modulo = A%B;
-     
-        System.out.println("Penjumlahan: "+A+" + "+B+" = "+jumlah);
-        System.out.println("Pengurangan: "+A+" - "+B+" = "+kurang);
-        System.out.println("Perkalian: "+A+" * "+B+" = "+kali);
-        System.out.println("Pembagian: "+A+" / "+B+" = "+bagi);
-        System.out.println("Modulo: "+A+" mod "+B+" = "+modulo);
-    }
-
-}
+	public static void main (String[] args) {
+		Scanner input = new Scanner(System.in);   
+		int A = input.nextInt();		// baca inputan disimpan sebagai nilai A
+		String operator = input.next(); // baca inputan disimpan sebagai nilai operator
+		int B = input.nextInt();		// baca inputan disimpan sebagai nilai B
+		int result; // variabel buat menampung hasil operasi matematika
+		
+		if(1<=A && B<=1000) {    // mengecek apakah A dan B sudah sesuai aturan
+			switch (operator) {  // menjalankan method sesuai operator yang dipilih
+			case "+":
+				result= A+B;
+				System.out.println(result);
+				break;
+			case "-":
+				result= A-B;
+				System.out.println(result);
+				break;
+			case "*":
+				result= A*B;
+				System.out.println(result);
+				break;
+			case "/":
+				result= A/B;
+				System.out.println(result);
+				break;
+			case "%":
+				result= A%B;
+				System.out.println(result);
+				break;
+				default:
+					System.out.println("Operator tidak tersedia"); // jika operator yang dimasukan tidak sesuai
+					break;
+					}
+			} else {
+				System.out.println("Tidak Sesuai Aturan"); // jika nilai A dan B tidak memenuhi
+				}
+		}
+	}
