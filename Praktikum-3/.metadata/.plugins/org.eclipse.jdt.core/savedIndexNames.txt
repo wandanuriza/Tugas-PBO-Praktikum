@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+D:\Akademik\SMT 3\PBO\PBO Praktikum\Project\Praktikum-3\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
