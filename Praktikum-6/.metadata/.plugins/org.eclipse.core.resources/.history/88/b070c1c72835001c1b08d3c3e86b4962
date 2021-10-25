@@ -1,0 +1,20 @@
+package Composition;
+
+public class Pohon {
+	String nama;
+	Daun daun1;
+	
+	public Pohon (String n, int jmlruas)
+	{
+		nama=n;
+		daun1 = new Daun(jmlruas);
+	}
+	
+	public void tampilPohon ()
+	{
+		System.out.println("Pohon = " + nama);
+		//method class Daun bisa dipanggil di kelas Pohon
+		System.out.println("Jumlah Ruas Daun 1 = " + daun1.getJmlRuasDaun()); 
+	}
+
+}

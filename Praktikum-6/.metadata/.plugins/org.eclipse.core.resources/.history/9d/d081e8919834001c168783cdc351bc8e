@@ -1,0 +1,13 @@
+package Association;
+
+public static void main (String[] args) 
+{
+	Lecturer lctr = new Lecturer("Wanda");
+	Course cs1 = new Course("Matematika Terapan");
+	Course cs2 = new Course("Pemrograman Berorientasi Objek");
+	
+	lctr.addCourse(cs1);
+	lctr.addCourse(cs2);
+	lctr.printInfo();
+}
+}

@@ -1,0 +1,37 @@
+package Association;
+
+public class Lecturer {
+	String lecturerName; //attribute
+	Course course[]; //deklarasi variabel CS bertipe course
+	                 //dengan array menunjukan bahwa 1 lecturer dapat
+	                 //mengajar lebih dari 1 course (matakuliah)
+	int count; //counter indeks array course
+	
+	Lecturer(String ln) //constructor
+	{
+		lecturerName = ln;
+		course = new Course[2]; //1 lecturer mengajar maksimal 2 course
+		count = 0;
+	}
+	
+	//method untuk menambah course bagi lecturer
+	//ada relasi dependency
+	public void addCourse(Course cs)
+	{
+		course[count]=cs;
+		count++;
+	}
+	
+	public void printInfo()
+	{
+		System.out.println(lecturerName);
+		for (int i=0;i<count; i++)
+			course[i].printCourse();
+	}
+	
+	// ada relasi dependency
+	public Course getCourse(int i) 
+	{
+		return course[i];
+	}
+}
