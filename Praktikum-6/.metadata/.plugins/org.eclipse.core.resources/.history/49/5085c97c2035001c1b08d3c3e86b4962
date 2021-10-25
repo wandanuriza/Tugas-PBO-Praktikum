@@ -1,0 +1,16 @@
+package Association;
+
+public class main {
+	public static void main (String[] args) 
+	{
+		Lecturer lctr = new Lecturer("Wanda");
+		Course cs1 = new Course("Matematika Terapan");
+		Course cs2 = new Course("Pemrograman Berorientasi Objek");
+		
+		lctr.addCourse(cs1);;  //ada relasi asosiasi melalui method addCourse
+		lctr.addCourse(cs2);
+		lctr.printInfo();
+		System.out.println(lctr.getCourse(1));  //ini belum di inisialisasi
+	}	
+}
+

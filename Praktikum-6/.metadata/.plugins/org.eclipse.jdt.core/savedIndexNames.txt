@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Akademik\SMT 3\PBO\Praktikum\Tugas-PBO-Praktikum\Praktikum-6\.metadata\.plugins\org.eclipse.jdt.core
+887469288.index
+1865797976.index
+2137079895.index

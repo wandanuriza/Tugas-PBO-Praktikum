@@ -1,0 +1,13 @@
+package Association;
+
+public class Course {
+	String courseName;
+	Course (String cn)
+	{
+		courseName=cn;
+	}
+}
+
+public void printCourse() {
+	System.out.println(courseName);
+}

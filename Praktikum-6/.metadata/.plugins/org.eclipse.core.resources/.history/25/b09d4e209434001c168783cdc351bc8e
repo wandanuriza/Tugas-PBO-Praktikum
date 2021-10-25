@@ -1,0 +1,14 @@
+package Association;
+
+class Course {
+	String courseName;
+	Course (String cn)         //constructor
+	{
+		courseName=cn;
+	}
+
+public void printCourse()   
+	{
+	System.out.println(courseName);
+	}
+}

@@ -1,0 +1,17 @@
+package Aggregation;
+
+public class Lingkaran {
+	private float jari;
+	private Titik titikPusat;
+	public Lingkaran(Titik T, float j) {   //constructor
+		jari = j;
+		titikPusat= T;
+	}
+	
+	public void cetakLingkaran() {        
+		System.out.println("Posisi Titik : ");
+	    titikPusat.posisiTitik();   // agregasi --> memanggil method posisiTitik()
+	    // Class Lingkaran bisa mengakses class Titik
+	    System.out.println("Jari jari : " + jari + "\n");
+	}
+}

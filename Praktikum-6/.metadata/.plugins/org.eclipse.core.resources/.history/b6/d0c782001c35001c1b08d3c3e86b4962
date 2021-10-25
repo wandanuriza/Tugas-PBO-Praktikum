@@ -1,0 +1,17 @@
+package Association;
+
+// asosiasi satu arah
+
+public class Course {
+	String courseName; //attribute
+	Course (String cn) //constructor
+	{
+		courseName=cn;
+	}
+
+//method menampilan nama mata kuliah
+public void printCourse()   
+	{
+	System.out.println(courseName);  
+	}
+}
